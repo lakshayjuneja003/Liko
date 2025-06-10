@@ -5,13 +5,28 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch index.js"
+    "dev": "node --watch index.js",
+    "dev:worker": "node --watch worker.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.11.1",
   "dependencies": {
-    "multer": "^2.0.1"
+    "@langchain/community": "^0.3.45",
+    "@langchain/core": "^0.3.57",
+    "@langchain/ollama": "^0.2.1",
+    "@langchain/openai": "^0.5.12",
+    "@langchain/qdrant": "^0.1.2",
+    "@langchain/textsplitters": "^0.1.0",
+    "@qdrant/js-client-rest": "^1.14.1",
+    "bullmq": "^5.53.2",
+    "dotenv": "^16.5.0",
+    "langchain": "^0.3.27",
+    "multer": "^2.0.1",
+    "ollama": "link:langchain/embeddings/ollama",
+    "pdf-parse": "^1.1.1",
+    "qdrant": "link:langchain/vectorstores/qdrant",
+    "qdrant-client": "^0.0.1"
   }
 }
